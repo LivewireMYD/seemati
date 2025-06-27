@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seemati Mayiladuthurai</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" defer></script>
+  <style>
+    body { background: #fff; }
+    .royal-gold { color: #bfa14a; }
+    .charcoal { color: #222; }
+    .hero-section-bg {
+      background-image: url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(34, 34, 34, 0.4);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+    }
+    .navbar-marquee {
+      background: linear-gradient(90deg, #ffe066 0%, #f783ac 50%, #a685e2 100%);
+      color: #fff;
+      font-weight: bold;
+      font-size: 0.95rem;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .navbar-marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 25s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar-marquee">
+    <span>✨ Premium Indian Clothing • Traditional & Contemporary • Kancheepuram Sarees • Designer Collection • Wedding Wear • Festival Specials • Men's & Women's Fashion • Kids Collection • ✨ Premium Indian Clothing • Traditional & Contemporary • Kancheepuram Sarees • Designer Collection • Wedding Wear • Festival Specials •</span>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm fade-in-up">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <span class="rounded-circle d-flex align-items-center justify-content-center me-2" style="width:40px;height:40px;background:linear-gradient(135deg,#ffe066,#f783ac);"><i class="bi bi-gem text-white fs-5"></i></span>
+        <span class="fs-4 fw-bold royal-gold">Seemati Mayiladuthurai</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link charcoal" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link charcoal" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link charcoal" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section-bg position-relative d-flex align-items-center justify-content-center">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content py-5">
+      <h1 class="display-4 fw-bold mb-4 fade-in-up">Welcome to<br><span class="royal-gold">Seemati Mayiladuthurai</span></h1>
+      <p class="lead mb-4 fade-in-up">Discover the finest collection of traditional and contemporary clothing for the entire family</p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 fade-in-up">
+        <a href="#about" class="btn btn-warning btn-lg px-4">Explore Our Collection</a>
+        <a href="#contact" class="btn btn-outline-light btn-lg px-4">Get In Touch</a>
+      </div>
+    </div>
+    <!-- Decorative floating icons -->
+    <div class="floating-icon star" style="top: 20%; left: 8%;"><i class="bi bi-star-fill text-warning"></i></div>
+    <div class="floating-icon gem" style="bottom: 18%; right: 10%;"><i class="bi bi-gem text-pink"></i></div>
+    <div class="floating-icon crown" style="top: 35%; right: 12%;"><i class="bi bi-award text-purple"></i></div>
+  </section>
+
+  <!-- Promotional Banner -->
+  <section class="py-3 promo-gradient fade-in-up">
+    <div class="container">
+      <div class="marquee text-white fw-semibold mb-2">
+        <span>🌟 SPECIAL OFFER: Get 20% OFF on Designer Sarees | Free Shipping on Orders Above ₹2000 | New Arrivals Every Week | Visit Our Store for Personalized Styling | Premium Quality Guaranteed | 🌟 SPECIAL OFFER: Get 20% OFF on Designer Sarees | Free Shipping on Orders Above ₹2000 | New Arrivals Every Week | Visit Our Store for Personalized Styling | Premium Quality Guaranteed |</span>
+      </div>
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3"><div class="d-flex align-items-center justify-content-center text-white"><i class="bi bi-truck fs-3 me-2"></i><div><div class="fw-bold">FREE SHIPPING</div><div class="small">All Over India</div></div></div></div>
+        <div class="col-6 col-md-3"><div class="d-flex align-items-center justify-content-center text-white"><i class="bi bi-shield-lock fs-3 me-2"></i><div><div class="fw-bold">100% SECURE</div><div class="small">Payments</div></div></div></div>
+        <div class="col-6 col-md-3"><div class="d-flex align-items-center justify-content-center text-white"><i class="bi bi-arrow-repeat fs-3 me-2"></i><div><div class="fw-bold">14 DAYS</div><div class="small">Money Back Guarantee</div></div></div></div>
+        <div class="col-6 col-md-3"><div class="d-flex align-items-center justify-content-center text-white"><i class="bi bi-award fs-3 me-2"></i><div><div class="fw-bold">EASY RETURNS</div><div class="small">Hassle Free</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold charcoal fade-in-up">About <span class="royal-gold">Seemati</span></h2>
+        <div class="mx-auto mb-3 gradient-bar"></div>
+        <p class="lead text-secondary fade-in-up">Where tradition meets elegance in every thread, celebrating the rich heritage of Indian fashion</p>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 fade-in-up">
+          <div class="p-4 border rounded-3 shadow-sm">
+            <h3 class="h4 royal-gold mb-3">Our Heritage</h3>
+            <p class="mb-2">Seemati Mayiladuthurai has been a trusted name in premium Indian clothing, bringing you the finest collection of traditional and contemporary wear for over decades. Our commitment to quality and authenticity makes us the preferred destination for fashion-conscious families.</p>
+            <p>From exquisite sarees that tell stories of tradition to modern designs that embrace contemporary elegance, we curate collections that celebrate the diverse beauty of Indian fashion.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-in-up">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Traditional Indian sarees display" class="img-fluid rounded-3 shadow-lg about-img-hover">
+            <div class="about-heart"><i class="bi bi-heart-fill"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 fade-in-up">
+        <div class="col-6 col-lg-3 text-center">
+          <div class="mb-3"><img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" class="img-fluid rounded-3 collection-img-hover" alt="Women's Collection"></div>
+          <h5 class="fw-semibold">Women's Collection</h5>
+          <p class="small text-secondary">Exquisite sarees, lehengas, and contemporary wear</p>
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+          <div class="mb-3"><img src="https://images.unsplash.com/photo-1622445275463-afa2ab738c34?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" class="img-fluid rounded-3 collection-img-hover" alt="Men's Collection"></div>
+          <h5 class="fw-semibold">Men's Collection</h5>
+          <p class="small text-secondary">Sophisticated kurtas, sherwanis, and formal wear</p>
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+          <div class="mb-3"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" class="img-fluid rounded-3 collection-img-hover" alt="Kids Collection"></div>
+          <h5 class="fw-semibold">Kids Collection</h5>
+          <p class="small text-secondary">Adorable traditional and modern outfits for children</p>
+        </div>
+        <div class="col-6 col-lg-3 text-center">
+          <div class="mb-3"><img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" class="img-fluid rounded-3 collection-img-hover" alt="Special Occasions"></div>
+          <h5 class="fw-semibold">Special Occasions</h5>
+          <p class="small text-secondary">Bridal wear and festive collections for memorable moments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Gallery Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold charcoal fade-in-up">Our Premium <span class="royal-gold">Collections</span></h2>
+        <div class="mx-auto mb-3 gradient-bar"></div>
+        <p class="lead text-secondary fade-in-up">Discover our exquisite range of traditional and contemporary Indian clothing</p>
+      </div>
+      <div class="row g-4 fade-in-up">
+        <!-- Repeat for each saree collection -->
+        <!-- ... (Product cards here, see next message for full code) ... -->
+      </div>
+      <div class="text-center mt-4 fade-in-up">
+        <a href="#" class="btn btn-gradient px-5 py-3 fw-semibold"><i class="bi bi-bag me-2"></i>Explore All Collections</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Occasions Section -->
+  <section id="occasions" class="py-5 bg-white fade-in-up">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold charcoal">Suitable For <span class="royal-gold">Every Occasion</span></h2>
+        <div class="mx-auto mb-3 gradient-bar"></div>
+        <p class="lead text-secondary">Carry charm wherever you go with our occasion-specific collections</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow occasion-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800" class="card-img-top" alt="Wedding Celebrations">
+              <span class="occasion-icon bg-pink"><i class="bi bi-heart-fill"></i></span>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Wedding Celebrations</h5>
+              <p class="card-text">Bridal lehengas, sarees, and traditional wear for the most special day</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">Shop Collection</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow occasion-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800" class="card-img-top" alt="Festival Wear">
+              <span class="occasion-icon bg-yellow"><i class="bi bi-stars"></i></span>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Festival Wear</h5>
+              <p class="card-text">Vibrant colors and traditional designs for Diwali, Holi, and other festivals</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">Shop Collection</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow occasion-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800" class="card-img-top" alt="Party & Events">
+              <span class="occasion-icon bg-purple"><i class="bi bi-award"></i></span>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Party & Events</h5>
+              <p class="card-text">Elegant contemporary and fusion wear for parties and social gatherings</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">Shop Collection</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow occasion-card-hover">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800" class="card-img-top" alt="Daily Elegance">
+              <span class="occasion-icon bg-blue"><i class="bi bi-calendar-event"></i></span>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Daily Elegance</h5>
+              <p class="card-text">Comfortable yet stylish casual wear for everyday occasions</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">Shop Collection</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <div class="d-inline-block p-4 border rounded-3 shadow fade-in-up">
+          <h4 class="h5 royal-gold mb-2">Can't Find What You're Looking For?</h4>
+          <p class="mb-3">Visit our store for personalized styling assistance</p>
+          <a href="#" class="btn btn-gradient">Visit Store</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Range Section -->
+  <section id="price-range" class="py-5 bg-light fade-in-up">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold charcoal">Stay on Budget, <span class="royal-gold">Shop in Style!</span></h2>
+        <div class="mx-auto mb-3 gradient-bar"></div>
+        <p class="lead text-secondary">Find the perfect outfit within your budget range</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow price-range-hover">
+            <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600" class="card-img-top" alt="Everyday Elegance">
+            <div class="card-body">
+              <span class="badge bg-primary mb-2">₹1,000 - ₹2,000</span>
+              <h5 class="card-title">Everyday Elegance</h5>
+              <p class="card-text">Beautiful cotton sarees for daily wear</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow price-range-hover">
+            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600" class="card-img-top" alt="Casual Collection">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">₹2,000 - ₹4,000</span>
+              <h5 class="card-title">Casual Collection</h5>
+              <p class="card-text">Comfortable and stylish casual wear</p>
+              <a href="#" class="btn btn-outline-success btn-sm">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow price-range-hover">
+            <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600" class="card-img-top" alt="Premium Range">
+            <div class="card-body">
+              <span class="badge bg-purple mb-2">₹4,000 - ₹6,000</span>
+              <h5 class="card-title">Premium Range</h5>
+              <p class="card-text">High-quality fabrics with intricate designs</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more price ranges as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Infinite Gallery Section -->
+  <section id="gallery" class="py-5 bg-white fade-in-up">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold charcoal">Shades of <span class="royal-gold">Happiness</span></h2>
+        <div class="mx-auto mb-3 gradient-bar"></div>
+        <p class="lead text-secondary">Explore our vibrant collection of traditional and contemporary clothing</p>
+      </div>
+      <div class="gallery-scroll d-flex align-items-center overflow-auto pb-3">
+        <div class="d-flex flex-nowrap gap-3">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600" class="gallery-img rounded-3 shadow" alt="Gallery 1">
+          <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600" class="gallery-img rounded-3 shadow" alt="Gallery 2">
+          <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600" class="gallery-img rounded-3 shadow" alt="Gallery 3">
+          <img src="https://images.unsplash.com/photo-1594736797933-d0a6ba8b8db9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600" class="gallery-img rounded-3 shadow" alt="Gallery 4">
+          <img src="https://images.unsplash.com/photo-1631255484664-e9a07b6e2e5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600" class="gallery-img rounded-3 shadow" alt="Gallery 5">
+          <img src="https://images.unsplash.com/photo-1595777216528-85e3738c2b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600" class="gallery-img rounded-3 shadow" alt="Gallery 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5 bg-light fade-in-up">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold charcoal">What Our <span class="royal-gold">Customers Say</span></h2>
+        <div class="mx-auto mb-3 gradient-bar"></div>
+        <p class="lead text-secondary">Trusted by thousands of satisfied customers across South India</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow testimonial-card-hover">
+            <div class="card-body text-center">
+              <div class="mb-3"><i class="bi bi-quote fs-1 text-warning"></i></div>
+              <div class="mb-2">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="card-text">"The most beautiful Kancheepuram sarees I've ever purchased! The quality is exceptional and the designs are timeless. Seemati has become our family's go-to store for all special occasions."</p>
+              <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200" class="rounded-circle border border-warning" width="48" height="48" alt="Priya Sharma">
+                <div class="text-start">
+                  <div class="fw-semibold">Priya Sharma</div>
+                  <div class="small text-secondary">Chennai</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow testimonial-card-hover">
+            <div class="card-body text-center">
+              <div class="mb-3"><i class="bi bi-quote fs-1 text-warning"></i></div>
+              <div class="mb-2">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="card-text">"Amazing collection of designer sarees! I bought my wedding trousseau from here and received so many compliments. The staff is knowledgeable and helpful in selecting the perfect outfits."</p>
+              <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200" class="rounded-circle border border-warning" width="48" height="48" alt="Anjali Reddy">
+                <div class="text-start">
+                  <div class="fw-semibold">Anjali Reddy</div>
+                  <div class="small text-secondary">Bangalore</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow testimonial-card-hover">
+            <div class="card-body text-center">
+              <div class="mb-3"><i class="bi bi-quote fs-1 text-warning"></i></div>
+              <div class="mb-2">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="card-text">"Excellent quality traditional wear for the entire family. Their kids collection is adorable and the men's kurtas are perfectly tailored. Highly recommend for authentic Indian clothing."</p>
+              <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200" class="rounded-circle border border-warning" width="48" height="48" alt="Meera Nair">
+                <div class="text-start">
+                  <div class="fw-semibold">Meera Nair</div>
+                  <div class="small text-secondary">Kochi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 text-center">
+        <div class="col-6 col-md-3">
+          <div class="fw-bold royal-gold fs-3">10,000+</div>
+          <div class="text-secondary">Happy Customers</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fw-bold royal-gold fs-3">25+</div>
+          <div class="text-secondary">Years of Excellence</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fw-bold royal-gold fs-3">500+</div>
+          <div class="text-secondary">Unique Designs</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fw-bold royal-gold fs-3">100%</div>
+          <div class="text-secondary">Authentic Products</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-white fade-in-up">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold charcoal">Get In <span class="royal-gold">Touch</span></h2>
+        <div class="mx-auto mb-3 gradient-bar"></div>
+        <p class="lead text-secondary">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="p-4 border rounded-3 shadow-sm bg-light">
+            <h3 class="h5 royal-gold mb-3">Send us a Message</h3>
+            <form id="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message *</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-gradient w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 border rounded-3 shadow-sm mb-4">
+            <h3 class="h5 royal-gold mb-3">Visit Our Store</h3>
+            <div class="mb-3"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Mayiladuthurai, Tamil Nadu, India</div>
+            <div class="mb-3"><i class="bi bi-clock-fill text-warning me-2"></i> Mon - Sat: 9:00 AM - 8:00 PM | Sunday: 10:00 AM - 6:00 PM</div>
+            <div class="mb-3"><i class="bi bi-telephone-fill text-warning me-2"></i> Call us for personalized assistance</div>
+          </div>
+          <div class="p-4 border rounded-3 shadow-sm mb-4">
+            <h3 class="h5 royal-gold mb-3">Follow Us</h3>
+            <a href="https://www.facebook.com/SeemattiMayavaram/" target="_blank" class="btn btn-primary btn-circle me-2"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/seematti.shop/?hl=en" target="_blank" class="btn btn-gradient btn-circle me-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn btn-success btn-circle"><i class="bi bi-whatsapp"></i></a>
+          </div>
+          <div class="position-relative rounded-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" class="img-fluid" alt="Seemati store front">
+            <div class="position-absolute bottom-0 start-0 p-3 text-white bg-dark bg-opacity-50 w-100">Visit our beautiful store</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5 fade-in-up">
+    <div class="container text-center">
+      <div class="d-flex align-items-center justify-content-center mb-3">
+        <span class="rounded-circle d-flex align-items-center justify-content-center me-2" style="width:48px;height:48px;background:linear-gradient(135deg,#ffe066,#f783ac);"><i class="bi bi-award text-white fs-4"></i></span>
+        <span class="fs-4 fw-bold royal-gold">Seemati Mayiladuthurai</span>
+      </div>
+      <p class="mb-3">Where tradition meets elegance. Discover the finest collection of Indian clothing for every occasion and every member of your family.</p>
+      <div class="mb-3">
+        <a href="https://www.facebook.com/SeemattiMayavaram/" target="_blank" class="text-white-50 me-3"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://www.instagram.com/seematti.shop/?hl=en" target="_blank" class="text-white-50 me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="#" class="text-white-50"><i class="bi bi-whatsapp fs-4"></i></a>
+      </div>
+      <div class="border-top border-white-25 pt-3">
+        <small class="text-white-50">© 2024 Seemati Mayiladuthurai. All rights reserved. | Celebrating Indian Fashion Heritage</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Widget -->
+  <div id="whatsapp-widget">
+    <a href="https://wa.me/919876543210?text=Hello!%20I'm%20interested%20in%20your%20clothing%20collection." target="_blank" class="btn btn-success btn-lg rounded-circle shadow d-flex align-items-center justify-content-center">
+      <i class="bi bi-whatsapp fs-2 text-white"></i>
+    </a>
+  </div>
+
+  <script>
+    // Smooth scroll for nav links
+    $(document).on('click', 'a.nav-link, .btn[href^="#"]', function(e) {
+      var target = $(this.getAttribute('href'));
+      if(target.length) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: target.offset().top - 70}, 700);
+      }
+    });
+    // Fade/slide-in on scroll
+    $(window).on('scroll', function() {
+      $('.fade-in-up').each(function() {
+        var elemTop = $(this).offset().top;
+        var winBottom = $(window).scrollTop() + $(window).height();
+        if(winBottom > elemTop + 100) {
+          $(this).addClass('show');
+        }
+      });
+    });
+    $(window).trigger('scroll');
+  </script>
+</body>
+</html> 
